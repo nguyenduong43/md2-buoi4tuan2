@@ -7,4 +7,13 @@ public class Calculator {
         }
         return x + y;
     }
-}
+        public static int findAbsolute(int number){
+            if (number < 0) return -number ;
+            return number;
+        }
+        public static int day(int a[],int b[])
+        {
+            if (a[0]+1==b[0]) return 1;
+            else return 0;
+        }
+    }

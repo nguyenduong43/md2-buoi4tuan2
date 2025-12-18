@@ -55,4 +55,40 @@ public class Calculatortest {
         Iterable<String> ll = new LinkedList<>(asList("CodeGym", "Coding", "Bootcamp", "Java"));
         assertIterableEquals(al, ll);
     }
+
+    @Test
+    void testFindAbsolute0() {
+        int number = 0;
+        int expected = 0;
+
+        int result = Calculator.findAbsolute(number);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void testFindAbsolute1() {
+        int number = 1;
+        int expected = 1;
+
+        int result = Calculator.findAbsolute(number);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void testFindAbsoluteNegative1() {
+        int number = -1;
+        int expected = 1;
+
+        int result = Calculator.findAbsolute(number);
+        assertEquals(expected, result);
+    }
+    @Test
+    void testDay()
+    {
+        int a[]={1,1,2018};
+        int b[]={2,1,2018};
+        int result=Calculator.day(a,b);
+        assertEquals(result,1,"khong phai ngay tiep theo");
+
+    }
 }
